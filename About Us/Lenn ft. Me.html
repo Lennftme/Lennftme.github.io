@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lenn ft. Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff8c00;
+      --background: #000000;
+      --text-dark: #2d2d2d;
+      --text-light: #666;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-image: linear-gradient(rgba(225, 245, 225, 0.493), rgba(166, 220, 239, 0.596)), 
+      url(Pinapple.jpg);
+      color: #333;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.25rem;
+    }
+
+    nav {
+      background-color: var(--primary);
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffe8e8;
+    }
+
+    .profiles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .profile {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    .profile img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .profile h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .profile p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 40px 20px;
+      background: var(--card-bg);
+      border-radius: 20px;
+      box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    .section h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 220px;
+      height: 220px;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0 5px 15px var(--shadow);
+    }
+
+    .music-player {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .music-card {
+      background: #ff8c00;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 8px 16px var(--shadow);
+      text-align: center;
+    }
+
+    .music-card h3 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #fff;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Perjalanan Cinta Kita</h1>
+    <p>Catatan manis tentang kisah cinta yang penuh warna</p>
+  </header>
+
+  <nav>
+    <a href="#profiles">Profile</a>
+    <a href="#gallery">Galery</a>
+    <a href="#music">Music</a>
+  </nav>
+
+  <section class="profiles" id="profiles">
+    <div class="profile">
+      <img src="Me.jpg" alt="Pasangan 1">
+      <h3>Fernando</h3>
+      <p>Pria sederhana yang jatuh cinta pada tawa manisnya. Pecinta senja, musik akustik, dan peluk hangat.</p>
+    </div>
+    <div class="profile">
+      <img src="El.jpg" alt="Pasangan 2">
+      <h3>Helena</h3>
+      <p>Perempuan ceria yang menyinari hari-hari Andi. Penyuka kopi, bunga matahari, dan segala hal romantis.</p>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>Our Galery</h2>
+    <div class="gallery">
+      <img src="KKV.jpg" alt="Jalan pertama kali">
+      <img src="Celebrate my Graduate.jpg" alt="Celebrate Graduate">
+      <img src="With Ncan.jpg" alt="With anak bulu">
+      <img src="Mirror Selfie.jpg" alt="KKV">
+    </div>
+  </section>
+
+  <section class="section" id="music">
+    <h2>Music</h2>
+    <div class="music-player">
+      <div class="music-card">
+        <h3>About You - The 1975</h3>
+        <p>
+          <a href="About The 1975.html", target="_blank">About The Artist</a>
+        </p>
+        <audio controls>
+          <source src="The 1975 - About You.mp4" type="audio/mpeg">
+          Browser Anda tidak mendukung elemen audio.
+        </audio>
+      </div>
+      <div class="music-card">
+        <h3>Merry Christmast, Please Don't Call - Bleachers</h3>
+        <p>
+          <a href="About Bleachers.html", target="_blank">About The Artist</a>
+        </p>
+        <audio controls>
+          <source src="Bleachers - Merry Christmas, Please Don't Call.mp4" type="audio/mpeg">
+          Browser Anda tidak mendukung elemen audio.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Perjalanan Cinta Kita. Dibuat dengan cinta oleh [Nama Kamu]. Semua hak cipta dilindungi.
+  </footer>
+</body>
+</html>

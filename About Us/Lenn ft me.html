@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cerita Kita</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Kristen ITC', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-image: linear-gradient(rgba(255, 245, 225, 0.493), rgba(166, 220, 239, 0.596)),
+                        url('Pinapple.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #333;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 15px;
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #ff6f91;
+    }
+
+    .profiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .card img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 1.3em;
+      color: #333;
+    }
+
+    .card .details {
+      text-align: left;
+      margin-top: 15px;
+    }
+
+    .card .details p {
+      margin: 10px 0;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .card .details strong {
+      color: #ff6f91;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .gallery-item p {
+      padding: 15px;
+      font-size: 0.95em;
+      color: #444;
+    }
+
+    footer {
+      background-color: #ff6f91;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cerita Kita</h1>
+    <p>Happy terus buat ayyy kuuu</p>
+  </header>
+
+  <section class="section">
+    <h2>Tentang Kami</h2>
+    <div class="profiles">
+      <div class="card">
+        <img src="Me.jpg" alt="Foto Kamu" />
+        <h3>Fernando Pratama</h3>
+        <div class="details">
+          <p><strong>🧑‍🎓 Tentang Saya:</strong><br> Lulusan Teknik Lingkungan, suka hal-hal berbau alam dan traveling.</p>
+          <p><strong>🎯 Hobi:</strong><br> Fotografi, menulis puisi, dan jalan-jalan kuliner.</p>
+          <p><strong>💖 Hal yang Disukai:</strong><br> Suasana senja, kopi hitam, dan kejutan kecil dari pasangan.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="El.jpg" alt="Foto Pasangan" />
+        <h3>Helena Lindilarasati T.L</h3>
+        <div class="details">
+          <p><strong>🧑‍🎓 Tentang Saya:</strong><br> Seorang desainer grafis yang suka tantangan dan kreatifitas.</p>
+          <p><strong>🎯 Hobi:</strong><br> Menggambar, mendengarkan musik jazz, dan main game strategi.</p>
+          <p><strong>💖 Hal yang Disukai:</strong><br> Makan malam romantis, laut, dan senyum kamu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Kegiatan Kami</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="Mirror Selfie.jpg" alt="Aktivitas 1" />
+        <p>📸 First Date (3 Juni 2024)</p>
+      </div>
+      <div class="gallery-item">
+        <img src="With Ncan.jpg" alt="Aktivitas 2" />
+        <p>13 Mei 2025</p>
+      </div>
+      <div class="gallery-item">
+        <img src="aktivitas3.jpg" alt="Aktivitas 3" />
+        <p>🌇 Jalan santai sore menikmati matahari terbenam di tepi pantai</p>
+      </div>
+    </div>
+  </section>
+  
+   <section class="section">
+    <h2>Awal Pertemuan Kami</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+      <div style="flex: 1; min-width: 280px;">
+        <img src="Celebrate my Graduate.jpg" alt="Foto Awal Pertemuan" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+      </div>
+      <div style="flex: 2; min-width: 280px;">
+        <p style="font-size: 1.05em; line-height: 1.8; color: #555;">
+          Kami pertama ketemu karna praktikum di kampus. Kebetulan saat itu aku sebagai asisten praktikum dan elen praktikannya.
+          Kami mulai dekat saat menjelang akhir praktikum. Kedekatan itu dimulai waktu kami pertam kali ke Gereja bareng, terus 
+          berlanjut sampai ke jalan bareng, nonton bioskop bareng, makan bareng. Tanggal resmi jadiannya saya sangat ingat yaitu
+          tanggal 6 Juni 2024 di salah satu bioskop di Samarinda. Jujur itu hari yang sangat bahagia buat aku khususnya.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cerita Kita. Dibuat dengan ❤️ oleh Kita Berdua.</p>
+  </footer>
+</body>
+</html>
